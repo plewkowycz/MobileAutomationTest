@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@wdio/sync": "^7.7.4",
-    "appium": "^1.21.0",
+    "appium": "^1.22.1",
     "chai": "^4.3.4",
     "webdriverio": "^7.7.4"
   },
