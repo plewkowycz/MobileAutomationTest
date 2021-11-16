@@ -1,0 +1,11 @@
+{
+  "name": "mobileautomationtest",
+  "version": "1.0.0",
+  "description": "demo_appium_practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"./node_modules/.bin/wdio wdio.conf.js\""
+  },
+  "author": "Liwyj",
+  "license": "ISC"
+}
