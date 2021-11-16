@@ -1,1 +1,1 @@
-# MobileAuotomationTest
+# MobileAutomationTest
