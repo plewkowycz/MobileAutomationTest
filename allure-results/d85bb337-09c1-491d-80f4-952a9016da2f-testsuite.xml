@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1637175233513' stop='1637175246943'>
+    <name>Verify Login Scenarios on Saxobank React Native Mobile App</name>
+    <title>Verify Login Scenarios on Saxobank React Native Mobile App</title>
+    <test-cases>
+        <test-case start='1637175233514' status='broken' stop='1637175246844'>
+            <name>User should be able to login using valid credentials to Saxobank Mobile App</name>
+            <title>User should be able to login using valid credentials to Saxobank Mobile App</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='emulator-5554-11'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='b325d3c3-764c-4777-9bc0-f493aa6b8b75-attachment.png' type='image/png' size='198826'/>
+            </attachments>
+            <failure>
+                <message>element ("//android.widget.Button[@resource-id="field_userid"]") still not displayed after 10000ms</message>
+                <stack-trace>Error: element ("//android.widget.Button[@resource-id="field_userid"]") still not displayed after 10000ms
+                    at E:\Projects\MobileAutomationTest\node_modules\webdriverio\build\commands\browser\waitUntil.js:66:23
+                    at async Element.elementErrorHandlerCallbackFn (E:\Projects\MobileAutomationTest\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.runCommandWithHooks (E:\Projects\MobileAutomationTest\node_modules\@wdio\sync\build\wrapCommand.js:105:25)
+                    at Element.runCommandWithHooks (E:\Projects\MobileAutomationTest\node_modules\@wdio\sync\build\wrapCommand.js:100:24)
+                    at Element.wrapCommandFn (E:\Projects\MobileAutomationTest\node_modules\@wdio\sync\build\wrapCommand.js:67:44)
+                    at Element.&lt;anonymous> (E:\Projects\MobileAutomationTest\node_modules\@wdio\utils\build\shim.js:270:24)
+                    at Element.elementErrorHandlerCallback (E:\Projects\MobileAutomationTest\node_modules\webdriverio\build\middlewares.js:48:12)
+                    at Element.waitForDisplayed (E:\Projects\MobileAutomationTest\node_modules\webdriverio\build\commands\element\waitForDisplayed.js:45:17)
+                    at Element.wrapCommandFn (E:\Projects\MobileAutomationTest\node_modules\@wdio\sync\build\wrapCommand.js:60:23)
+                    at Element.elementErrorHandlerCallbackFn (E:\Projects\MobileAutomationTest\node_modules\webdriverio\build\middlewares.js:24:65)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+                    at Context.&lt;anonymous> (E:\Projects\MobileAutomationTest\test\specs\example.e2e.js:15:62)
+                    at Context.executeSync (E:\Projects\MobileAutomationTest\node_modules\@wdio\sync\build\index.js:38:22)
+                    at E:\Projects\MobileAutomationTest\node_modules\@wdio\sync\build\index.js:69:73</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,80 @@
+{
+  "uid" : "1285374f14028aa7",
+  "name" : "User should not be able to login with invalid credentials to Facebook Mobile App",
+  "fullName" : "Verify Login Scenarios on Facebook React Native Mobile App.User should not be able to login with invalid credentials to Facebook Mobile App",
+  "historyId" : "d6d9c2b4e2c181c81eddc9a63da1e129",
+  "time" : {
+    "start" : 1637095346755,
+    "stop" : 1637095370701,
+    "duration" : 23946
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'Login Failed' to equal 'You Can\\'t Use This Feature Right Now'      \n                      actual expected\n                      \n                      'LoginYou FailedCan\\'t Use This Feature Right Now'\n                      ",
+  "statusTrace" : "AssertionError: expected 'Login Failed' to equal 'You Can\\'t Use This Feature Right Now'\n                    at Context.<anonymous> (E:\\Projects\\MobileAutomationTest\\test\\specs\\example.e2e.js:34:22)\n                    at Context.executeSync (E:\\Projects\\MobileAutomationTest\\node_modules\\@wdio\\sync\\build\\index.js:38:22)\n                    at E:\\Projects\\MobileAutomationTest\\node_modules\\@wdio\\sync\\build\\index.js:69:73",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "expected 'Login Failed' to equal 'You Can\\'t Use This Feature Right Now'      \n                      actual expected\n                      \n                      'LoginYou FailedCan\\'t Use This Feature Right Now'\n                      ",
+    "statusTrace" : "AssertionError: expected 'Login Failed' to equal 'You Can\\'t Use This Feature Right Now'\n                    at Context.<anonymous> (E:\\Projects\\MobileAutomationTest\\test\\specs\\example.e2e.js:34:22)\n                    at Context.executeSync (E:\\Projects\\MobileAutomationTest\\node_modules\\@wdio\\sync\\build\\index.js:38:22)\n                    at E:\\Projects\\MobileAutomationTest\\node_modules\\@wdio\\sync\\build\\index.js:69:73",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "dc2a89cf513c561e",
+      "name" : "Screenshot",
+      "source" : "dc2a89cf513c561e.png",
+      "type" : "image/png",
+      "size" : 239682
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Verify Login Scenarios on Facebook React Native Mobile App"
+  }, {
+    "name" : "testClass",
+    "value" : "Verify Login Scenarios on Facebook React Native Mobile App"
+  }, {
+    "name" : "testMethod",
+    "value" : "User should not be able to login with invalid credentials to Facebook Mobile App"
+  }, {
+    "name" : "package",
+    "value" : "Verify Login Scenarios on Facebook React Native Mobile App"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "device",
+    "value" : "emulator-5554-11"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1285374f14028aa7.json",
+  "parameterValues" : [ "emulator-5554-11" ]
+}

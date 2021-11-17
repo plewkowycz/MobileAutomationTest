@@ -1,0 +1,56 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "User should be able to login using valid credentials to Facebook Mobile App",
+    "uid" : "38719ad7ac328a16",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1637096203070,
+      "stop" : 1637096232410,
+      "duration" : 29340
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 1,
+    "retriesStatusChange" : false,
+    "parameters" : [ "emulator-5554-11" ]
+  }, {
+    "name" : "User should not be able to login with invalid credentials to Facebook Mobile App",
+    "uid" : "ab35235ecd1b360e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1637096232518,
+      "stop" : 1637096262225,
+      "duration" : 29707
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 1,
+    "retriesStatusChange" : true,
+    "parameters" : [ "emulator-5554-11" ]
+  }, {
+    "name" : "Test Case should Fail Because of Invalid Element",
+    "uid" : "cb640f5cbd024dd2",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1637096262319,
+      "stop" : 1637096281626,
+      "duration" : 19307
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 1,
+    "retriesStatusChange" : false,
+    "parameters" : [ "emulator-5554-11" ]
+  } ]
+}

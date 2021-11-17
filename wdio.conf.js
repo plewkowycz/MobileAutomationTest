@@ -8,8 +8,8 @@ exports.config = {
       {
         platformName: 'Android',
         platformVersion: '11',
-        appPackage: 'com.facebook.katana',
-        appActivity: 'com.facebook.katana.LoginActivity',
+        appPackage: 'com.saxobank.go',
+        appActivity: 'com.mobile.MainActivity',
         automationName: 'UiAutomator2'
       }
     ],

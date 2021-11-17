@@ -1,0 +1,70 @@
+{
+  "uid" : "38719ad7ac328a16",
+  "name" : "User should be able to login using valid credentials to Facebook Mobile App",
+  "fullName" : "Verify Login Scenarios on Facebook React Native Mobile App.User should be able to login using valid credentials to Facebook Mobile App",
+  "historyId" : "75aebf3342dee8d9df9a422720d9043a",
+  "time" : {
+    "start" : 1637096203070,
+    "stop" : 1637096232410,
+    "duration" : 29340
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Verify Login Scenarios on Facebook React Native Mobile App"
+  }, {
+    "name" : "testClass",
+    "value" : "Verify Login Scenarios on Facebook React Native Mobile App"
+  }, {
+    "name" : "testMethod",
+    "value" : "User should be able to login using valid credentials to Facebook Mobile App"
+  }, {
+    "name" : "package",
+    "value" : "Verify Login Scenarios on Facebook React Native Mobile App"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "device",
+    "value" : "emulator-5554-11"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "cb424d868ef51b85",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637095320145,
+        "stop" : 1637095346668,
+        "duration" : 26523
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "38719ad7ac328a16.json",
+  "parameterValues" : [ "emulator-5554-11" ]
+}

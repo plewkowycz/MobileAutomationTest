@@ -1,0 +1,121 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1637096203069' stop='1637096281749'>
+    <name>Verify Login Scenarios on Facebook React Native Mobile App</name>
+    <title>Verify Login Scenarios on Facebook React Native Mobile App</title>
+    <test-cases>
+        <test-case start='1637096203070' status='passed' stop='1637096232410'>
+            <name>User should be able to login using valid credentials to Facebook Mobile App</name>
+            <title>User should be able to login using valid credentials to Facebook Mobile App</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='emulator-5554-11'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1637096232518' status='broken' stop='1637096262225'>
+            <name>User should not be able to login with invalid credentials to Facebook Mobile App</name>
+            <title>User should not be able to login with invalid credentials to Facebook Mobile App</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='emulator-5554-11'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='c27fa89a-02d5-44b6-8d31-ddd904da6e55-attachment.png' type='image/png' size='25593'/>
+            </attachments>
+            <failure>
+                <message>element ("//android.widget.TextView[@resource-id="com.facebook.katana:id/(name removed)"]") still not displayed after 10000ms</message>
+                <stack-trace>Error: element ("//android.widget.TextView[@resource-id="com.facebook.katana:id/(name removed)"]") still not displayed after 10000ms
+                    at E:\Projects\MobileAutomationTest\node_modules\webdriverio\build\commands\browser\waitUntil.js:66:23
+                    at async Element.elementErrorHandlerCallbackFn (E:\Projects\MobileAutomationTest\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.runCommandWithHooks (E:\Projects\MobileAutomationTest\node_modules\@wdio\sync\build\wrapCommand.js:105:25)
+                    at Element.runCommandWithHooks (E:\Projects\MobileAutomationTest\node_modules\@wdio\sync\build\wrapCommand.js:100:24)
+                    at Element.wrapCommandFn (E:\Projects\MobileAutomationTest\node_modules\@wdio\sync\build\wrapCommand.js:67:44)
+                    at Element.&lt;anonymous> (E:\Projects\MobileAutomationTest\node_modules\@wdio\utils\build\shim.js:270:24)
+                    at Element.elementErrorHandlerCallback (E:\Projects\MobileAutomationTest\node_modules\webdriverio\build\middlewares.js:48:12)
+                    at Element.waitForDisplayed (E:\Projects\MobileAutomationTest\node_modules\webdriverio\build\commands\element\waitForDisplayed.js:45:17)
+                    at Element.wrapCommandFn (E:\Projects\MobileAutomationTest\node_modules\@wdio\sync\build\wrapCommand.js:60:23)
+                    at Element.elementErrorHandlerCallbackFn (E:\Projects\MobileAutomationTest\node_modules\webdriverio\build\middlewares.js:24:65)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+                    at Context.&lt;anonymous> (E:\Projects\MobileAutomationTest\test\specs\example.e2e.js:30:7)
+                    at Context.executeSync (E:\Projects\MobileAutomationTest\node_modules\@wdio\sync\build\index.js:38:22)
+                    at E:\Projects\MobileAutomationTest\node_modules\@wdio\sync\build\index.js:69:73</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1637096262319' status='broken' stop='1637096281626'>
+            <name>Test Case should Fail Because of Invalid Element</name>
+            <title>Test Case should Fail Because of Invalid Element</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='emulator-5554-11'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='0764054f-ba49-479c-b92d-36a1524f3232-attachment.png' type='image/png' size='25646'/>
+            </attachments>
+            <failure>
+                <message>org.eclipse.wst.xml.xpath2.processor.XPathParserException: CUP parser error: Parser error: line 1 col 79: </message>
+                <stack-trace>io.appium.uiautomator2.common.exceptions.InvalidSelectorException: org.eclipse.wst.xml.xpath2.processor.XPathParserException: CUP parser error: Parser error: line 1 col 79: 
+                	at io.appium.uiautomator2.core.AccessibilityNodeInfoDumper.findNodes(AccessibilityNodeInfoDumper.java:213)
+                	at io.appium.uiautomator2.utils.ElementLocationHelpers.getXPathNodeMatch(ElementLocationHelpers.java:119)
+                	at io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:88)
+                	at io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:67)
+                	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
+                	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)
+                	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)
+                	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)
+                	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+                	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+                	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+                	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+                	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)
+                	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+                	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+                	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)
+                	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)
+                	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
+                	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
+                	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+                	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
+                	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
+                	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
+                	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
+                	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+                	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+                	at java.lang.Thread.run(Thread.java:923)
+                Caused by: org.eclipse.wst.xml.xpath2.processor.XPathParserException: CUP parser error: Parser error: line 1 col 79: 
+                	at org.eclipse.wst.xml.xpath2.processor.internal.InternalXPathParser.parse(InternalXPathParser.java:67)
+                	at org.eclipse.wst.xml.xpath2.processor.JFlexCupParser.parse(JFlexCupParser.java:33)
+                	at org.eclipse.wst.xml.xpath2.processor.Engine.parseExpression(Engine.java:17)
+                	at io.appium.uiautomator2.core.AccessibilityNodeInfoDumper.findNodes(AccessibilityNodeInfoDumper.java:211)
+                	... 37 more
+                Caused by: org.eclipse.wst.xml.xpath2.processor.internal.CupError
+                	at org.eclipse.wst.xml.xpath2.processor.internal.XPathCup.report_error(XPathCup.java:3238)
+                	at java_cup.runtime.lr_parser.syntax_error(lr_parser.java:396)
+                	at java_cup.runtime.lr_parser.parse(lr_parser.java:595)
+                	at org.eclipse.wst.xml.xpath2.processor.internal.InternalXPathParser.parse(InternalXPathParser.java:47)
+                	... 40 more
+                    at Browser.runCommandWithHooks (E:\Projects\MobileAutomationTest\node_modules\@wdio\sync\build\wrapCommand.js:100:24)
+                    at Browser.wrapCommandFn (E:\Projects\MobileAutomationTest\node_modules\@wdio\sync\build\wrapCommand.js:67:44)
+                    at Browser.&lt;anonymous> (E:\Projects\MobileAutomationTest\node_modules\@wdio\utils\build\shim.js:270:24)
+                    at global.$ (E:\Projects\MobileAutomationTest\node_modules\@wdio\runner\build\index.js:194:42)
+                    at Context.&lt;anonymous> (E:\Projects\MobileAutomationTest\test\specs\example.e2e.js:45:4)
+                    at Context.executeSync (E:\Projects\MobileAutomationTest\node_modules\@wdio\sync\build\index.js:38:22)
+                    at E:\Projects\MobileAutomationTest\node_modules\@wdio\sync\build\index.js:69:73</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

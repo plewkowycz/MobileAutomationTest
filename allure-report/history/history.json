@@ -1,0 +1,61 @@
+{
+  "d6d9c2b4e2c181c81eddc9a63da1e129" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ab35235ecd1b360e",
+      "status" : "broken",
+      "statusDetails" : "element (\"//android.widget.TextView[@resource-id=\"com.facebook.katana:id/(name removed)\"]\") still not displayed after 10000ms",
+      "time" : {
+        "start" : 1637096232518,
+        "stop" : 1637096262225,
+        "duration" : 29707
+      }
+    } ]
+  },
+  "87caa589052ae46dc1c5c8d3b14d4f2e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cb640f5cbd024dd2",
+      "status" : "broken",
+      "statusDetails" : "org.eclipse.wst.xml.xpath2.processor.XPathParserException: CUP parser error: Parser error: line 1 col 79: ",
+      "time" : {
+        "start" : 1637096262319,
+        "stop" : 1637096281626,
+        "duration" : 19307
+      }
+    } ]
+  },
+  "75aebf3342dee8d9df9a422720d9043a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "38719ad7ac328a16",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637096203070,
+        "stop" : 1637096232410,
+        "duration" : 29340
+      }
+    } ]
+  }
+}
