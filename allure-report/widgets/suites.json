@@ -1,15 +1,15 @@
 {
   "total" : 1,
   "items" : [ {
-    "uid" : "6237e7286a3f0a91e722d7dfdf545534",
-    "name" : "Verify Login Scenarios on Facebook React Native Mobile App",
+    "uid" : "8d6bd3eba2adbb31a95ee47f3370ff24",
+    "name" : "Verify Login Scenarios on Saxobank React Native Mobile App",
     "statistic" : {
       "failed" : 0,
       "broken" : 2,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
-      "total" : 3
+      "total" : 2
     }
   } ]
 }

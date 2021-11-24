@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1637176031530' stop='1637176051012'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1637760123679' stop='1637760143071'>
     <name>Verify Login Scenarios on Saxobank React Native Mobile App</name>
     <title>Verify Login Scenarios on Saxobank React Native Mobile App</title>
     <test-cases>
-        <test-case start='1637176031530' status='passed' stop='1637176050897'>
+        <test-case start='1637760123680' status='passed' stop='1637760142911'>
             <name>User should be able to login using valid credentials to Saxobank Mobile App</name>
             <title>User should be able to login using valid credentials to Saxobank Mobile App</title>
             <labels>

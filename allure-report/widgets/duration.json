@@ -1,30 +1,20 @@
 [ {
-  "uid" : "ab35235ecd1b360e",
-  "name" : "User should not be able to login with invalid credentials to Facebook Mobile App",
+  "uid" : "e127da5ed0c1a879",
+  "name" : "User should be able to login using valid credentials to Saxobank Mobile App",
   "time" : {
-    "start" : 1637096232518,
-    "stop" : 1637096262225,
-    "duration" : 29707
+    "start" : 1637759475149,
+    "stop" : 1637759504339,
+    "duration" : 29190
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "38719ad7ac328a16",
-  "name" : "User should be able to login using valid credentials to Facebook Mobile App",
+  "uid" : "5f4de8441416debb",
+  "name" : "User should not be able to login using wrong credentials to Saxobank Mobile App",
   "time" : {
-    "start" : 1637096203070,
-    "stop" : 1637096232410,
-    "duration" : 29340
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "cb640f5cbd024dd2",
-  "name" : "Test Case should Fail Because of Invalid Element",
-  "time" : {
-    "start" : 1637096262319,
-    "stop" : 1637096281626,
-    "duration" : 19307
+    "start" : 1637759294361,
+    "stop" : 1637759305331,
+    "duration" : 10970
   },
   "status" : "broken",
   "severity" : "normal"

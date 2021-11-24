@@ -1,5 +1,5 @@
 {
-  "d6d9c2b4e2c181c81eddc9a63da1e129" : {
+  "f664e61a3a530fa67f485c68f53e6020" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 1,
@@ -9,17 +9,17 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ab35235ecd1b360e",
+      "uid" : "e127da5ed0c1a879",
       "status" : "broken",
-      "statusDetails" : "element (\"//android.widget.TextView[@resource-id=\"com.facebook.katana:id/(name removed)\"]\") still not displayed after 10000ms",
+      "statusDetails" : "Invalid Chai property: toBeEnabled",
       "time" : {
-        "start" : 1637096232518,
-        "stop" : 1637096262225,
-        "duration" : 29707
+        "start" : 1637759475149,
+        "stop" : 1637759504339,
+        "duration" : 29190
       }
     } ]
   },
-  "87caa589052ae46dc1c5c8d3b14d4f2e" : {
+  "299b6f872d37bd8af8d4261c00b31a3d" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 1,
@@ -29,32 +29,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "cb640f5cbd024dd2",
+      "uid" : "5f4de8441416debb",
       "status" : "broken",
-      "statusDetails" : "org.eclipse.wst.xml.xpath2.processor.XPathParserException: CUP parser error: Parser error: line 1 col 79: ",
+      "statusDetails" : "Invalid Chai property: dom. Did you mean \"to\"?",
       "time" : {
-        "start" : 1637096262319,
-        "stop" : 1637096281626,
-        "duration" : 19307
-      }
-    } ]
-  },
-  "75aebf3342dee8d9df9a422720d9043a" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "38719ad7ac328a16",
-      "status" : "passed",
-      "time" : {
-        "start" : 1637096203070,
-        "stop" : 1637096232410,
-        "duration" : 29340
+        "start" : 1637759294361,
+        "stop" : 1637759305331,
+        "duration" : 10970
       }
     } ]
   }

@@ -2,14 +2,14 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "User should be able to login using valid credentials to Facebook Mobile App",
-    "uid" : "38719ad7ac328a16",
+    "name" : "User should not be able to login using wrong credentials to Saxobank Mobile App",
+    "uid" : "5f4de8441416debb",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
+    "status" : "broken",
     "time" : {
-      "start" : 1637096203070,
-      "stop" : 1637096232410,
-      "duration" : 29340
+      "start" : 1637759294361,
+      "stop" : 1637759305331,
+      "duration" : 10970
     },
     "flaky" : false,
     "newFailed" : false,
@@ -19,31 +19,14 @@
     "retriesStatusChange" : false,
     "parameters" : [ "emulator-5554-11" ]
   }, {
-    "name" : "User should not be able to login with invalid credentials to Facebook Mobile App",
-    "uid" : "ab35235ecd1b360e",
+    "name" : "User should be able to login using valid credentials to Saxobank Mobile App",
+    "uid" : "e127da5ed0c1a879",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
-      "start" : 1637096232518,
-      "stop" : 1637096262225,
-      "duration" : 29707
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "newPassed" : false,
-    "newBroken" : false,
-    "retriesCount" : 1,
-    "retriesStatusChange" : true,
-    "parameters" : [ "emulator-5554-11" ]
-  }, {
-    "name" : "Test Case should Fail Because of Invalid Element",
-    "uid" : "cb640f5cbd024dd2",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "broken",
-    "time" : {
-      "start" : 1637096262319,
-      "stop" : 1637096281626,
-      "duration" : 19307
+      "start" : 1637759475149,
+      "stop" : 1637759504339,
+      "duration" : 29190
     },
     "flaky" : false,
     "newFailed" : false,

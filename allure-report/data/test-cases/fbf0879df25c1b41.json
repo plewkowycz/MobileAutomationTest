@@ -1,0 +1,80 @@
+{
+  "uid" : "fbf0879df25c1b41",
+  "name" : "User should not be able to login using wrong credentials to Saxobank Mobile App",
+  "fullName" : "Verify Login Scenarios on Saxobank React Native Mobile App.User should not be able to login using wrong credentials to Saxobank Mobile App",
+  "historyId" : "299b6f872d37bd8af8d4261c00b31a3d",
+  "time" : {
+    "start" : 1637759020953,
+    "stop" : 1637759031271,
+    "duration" : 10318
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Invalid Chai property: toHaveText",
+  "statusTrace" : "Error: Invalid Chai property: toHaveText\n                    at Object.proxyGetter [as get] (E:\\Projects\\MobileAutomationTest\\node_modules\\chai\\lib\\chai\\utils\\proxify.js:78:17)\n                    at Context.<anonymous> (E:\\Projects\\MobileAutomationTest\\test\\specs\\example.e2e.js:21:16)\n                    at Context.executeSync (E:\\Projects\\MobileAutomationTest\\node_modules\\@wdio\\sync\\build\\index.js:38:22)\n                    at E:\\Projects\\MobileAutomationTest\\node_modules\\@wdio\\sync\\build\\index.js:69:73",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Invalid Chai property: toHaveText",
+    "statusTrace" : "Error: Invalid Chai property: toHaveText\n                    at Object.proxyGetter [as get] (E:\\Projects\\MobileAutomationTest\\node_modules\\chai\\lib\\chai\\utils\\proxify.js:78:17)\n                    at Context.<anonymous> (E:\\Projects\\MobileAutomationTest\\test\\specs\\example.e2e.js:21:16)\n                    at Context.executeSync (E:\\Projects\\MobileAutomationTest\\node_modules\\@wdio\\sync\\build\\index.js:38:22)\n                    at E:\\Projects\\MobileAutomationTest\\node_modules\\@wdio\\sync\\build\\index.js:69:73",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f349ca963df86335",
+      "name" : "Screenshot",
+      "source" : "f349ca963df86335.png",
+      "type" : "image/png",
+      "size" : 267311
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Verify Login Scenarios on Saxobank React Native Mobile App"
+  }, {
+    "name" : "testClass",
+    "value" : "Verify Login Scenarios on Saxobank React Native Mobile App"
+  }, {
+    "name" : "testMethod",
+    "value" : "User should not be able to login using wrong credentials to Saxobank Mobile App"
+  }, {
+    "name" : "package",
+    "value" : "Verify Login Scenarios on Saxobank React Native Mobile App"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "device",
+    "value" : "emulator-5554-11"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fbf0879df25c1b41.json",
+  "parameterValues" : [ "emulator-5554-11" ]
+}
