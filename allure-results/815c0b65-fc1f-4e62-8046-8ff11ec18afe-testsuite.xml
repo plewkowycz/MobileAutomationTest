@@ -1,0 +1,76 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1638979533398' stop='1638979540268'>
+    <name>Verify Login Scenarios on Saxobank React Native Mobile App</name>
+    <title>Verify Login Scenarios on Saxobank React Native Mobile App</title>
+    <test-cases>
+        <test-case start='1638979533398' status='broken' stop='1638979540266'>
+            <name>User should not be able to login using wrong credentials to Saxobank Mobile App</name>
+            <title>User should not be able to login using wrong credentials to Saxobank Mobile App</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='Pixel 3 9-9'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>org.eclipse.wst.xml.xpath2.processor.XPathParserException: CUP parser error: Parser error: line 1 col 57: ]</message>
+                <stack-trace>io.appium.uiautomator2.common.exceptions.InvalidSelectorException: org.eclipse.wst.xml.xpath2.processor.XPathParserException: CUP parser error: Parser error: line 1 col 57: ]
+                	at io.appium.uiautomator2.core.AccessibilityNodeInfoDumper.findNodes(AccessibilityNodeInfoDumper.java:213)
+                	at io.appium.uiautomator2.utils.ElementLocationHelpers.getXPathNodeMatch(ElementLocationHelpers.java:119)
+                	at io.appium.uiautomator2.handler.FindElement.findElement(FindElement.java:88)
+                	at io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:67)
+                	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
+                	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)
+                	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)
+                	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)
+                	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+                	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+                	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+                	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+                	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+                	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+                	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+                	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)
+                	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+                	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+                	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)
+                	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+                	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+                	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+                	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)
+                	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+                	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+                	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+                	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
+                	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+                	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+                	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
+                	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+                	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
+                	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
+                	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
+                	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
+                	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+                	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+                	at java.lang.Thread.run(Thread.java:764)
+                Caused by: org.eclipse.wst.xml.xpath2.processor.XPathParserException: CUP parser error: Parser error: line 1 col 57: ]
+                	at org.eclipse.wst.xml.xpath2.processor.internal.InternalXPathParser.parse(InternalXPathParser.java:67)
+                	at org.eclipse.wst.xml.xpath2.processor.JFlexCupParser.parse(JFlexCupParser.java:33)
+                	at org.eclipse.wst.xml.xpath2.processor.Engine.parseExpression(Engine.java:17)
+                	at io.appium.uiautomator2.core.AccessibilityNodeInfoDumper.findNodes(AccessibilityNodeInfoDumper.java:211)
+                	... 37 more
+                Caused by: org.eclipse.wst.xml.xpath2.processor.internal.CupError
+                	at org.eclipse.wst.xml.xpath2.processor.internal.XPathCup.report_error(XPathCup.java:3238)
+                	at java_cup.runtime.lr_parser.syntax_error(lr_parser.java:396)
+                	at java_cup.runtime.lr_parser.parse(lr_parser.java:595)
+                	at org.eclipse.wst.xml.xpath2.processor.internal.InternalXPathParser.parse(InternalXPathParser.java:47)
+                	... 40 more
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

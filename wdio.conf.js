@@ -7,10 +7,10 @@ exports.config = {
     capabilities: [
       {
         platformName: 'Android',
-        platformVersion: '11',
-        appPackage: 'com.saxobank.go',
-        appActivity: 'com.mobile.MainActivity',
-        automationName: 'UiAutomator2'
+        platformVersion: '9',
+        deviceName:'Pixel 3',
+        automationName: 'UiAutomator2',
+        app:'E:/Projects/gotestmaster.apk'
       }
     ],
     services: [
