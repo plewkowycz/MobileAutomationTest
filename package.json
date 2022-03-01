@@ -1,0 +1,27 @@
+{
+  "name": "mobileautomationtest",
+  "version": "1.0.0",
+  "description": "demo_appium_practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "node /node_modules/.bin/wdio wdio.conf.js",
+    "start": "wdio wdio.conf.js"
+  },
+  "author": "Liwyj",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/sync": "^7.7.4",
+    "appium": "^1.22.1",
+    "chai": "^4.3.4",
+    "node-sass": "^6.0.1",
+    "webdriverio": "^7.7.4"
+  },
+  "devDependencies": {
+    "@wdio/allure-reporter": "^7.7.3",
+    "@wdio/appium-service": "^7.7.3",
+    "@wdio/cli": "^7.7.4",
+    "@wdio/local-runner": "^7.7.4",
+    "@wdio/mocha-framework": "^7.7.4",
+    "@wdio/selenium-standalone-service": "^7.7.4"
+  }
+}
