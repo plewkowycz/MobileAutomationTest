@@ -48,6 +48,15 @@ describe('Verify Login Scenarios on Saxobank React Native Mobile App', () => {
   await button_trading.waitForExist({ timeout: 20000 });
   await button_trading.click();
 
+  var button_research = await $('[data-test-id="Research"]');
+  await button_research.click();
+
+  var button_search = await $('[data-test-id="Search"]');
+  await button_search.click();
+
+  var button_account = await $('[data-test-id="Account"]');
+  await button_account.click();
+
   var button_menu = await $('[data-test-id="Menu"]');
   await button_menu.click();
 

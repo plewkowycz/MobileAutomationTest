@@ -8,7 +8,7 @@ exports.config = {
       {
         platformName: 'Android',
         platformVersion: '11',
-        deviceName:'Pixel 2 API 30',
+        deviceName:'Pixel 5',
         automationName: 'UiAutomator2',
         app:'E:/Projects/gotestmaster.apk'
       }
