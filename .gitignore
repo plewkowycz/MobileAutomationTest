@@ -15,6 +15,13 @@
 local.properties
 allure-results/
 node_modules
+build
+chromedriver
+*.log
+.DS_Store
+coverage
+package-lock.json*
+.vscode
 
 ## Ignore Mac OS Stuff
 .DS_Store
