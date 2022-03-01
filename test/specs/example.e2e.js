@@ -4,14 +4,9 @@ describe('Verify Login Scenarios on Saxobank React Native Mobile App', () => {
    await loginSelector.waitForDisplayed({ timeout: 30000 });
    await loginSelector.setValue('Valid-Email');
 
-   var contexts = driver.getContexts();
-   console.log("All contexts: ", contexts)
-
    var passwordSelector = await $('//android.widget.EditText[@resource-id="field_password"]');
    await passwordSelector.waitForDisplayed({ timeout: 30000 });
    await passwordSelector.setValue('Valid-Password');
-
-  
 
    var loginButtonSelector = await $('//android.widget.Button[@resource-id="button_login"]');
    await loginButtonSelector.click();
@@ -33,7 +28,6 @@ describe('Verify Login Scenarios on Saxobank React Native Mobile App', () => {
   var loginButtonSelector = await $('//android.widget.Button[@resource-id="button_login"]');
   await loginButtonSelector.click();
 
- // var disclaimer_riskwarning = await $('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.Button');
   
   var contexts = driver.getContexts();
   console.log("All contexts: ", contexts)
@@ -41,54 +35,31 @@ describe('Verify Login Scenarios on Saxobank React Native Mobile App', () => {
   // await driver.switchContext(contexts[1]);
   await driver.switchContext('WEBVIEW_com.saxobank.go.test');
   
- // await disclaimer_riskwarning.click();
 
- // var disclaimer_button= await $('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.Button');
- // await disclaimer_button.click();
+ /* var button_disclaimer_webview = await $('[class="btn--link"]');
+  await button_disclaimer_webview.waitForExist({ timeout: 50000 });
+  await button_disclaimer_webview.click();  Need to add test for disclaimer for using old webview for olders devices with Android*/
 
-  var button_trading = await $('data-test-id="Trading"');
+  var risk_warrning_button = await $('[data-test-id="risk-warning-accept"]'); /* Need to add if in the future as not always appears */
+  await risk_warrning_button.waitForExist({ timeout: 20000 });
+  await risk_warrning_button.click();
+
+  var button_trading = await $('[data-test-id="Trading"]');
   await button_trading.waitForExist({ timeout: 20000 });
   await button_trading.click();
 
-  var button_menu = await $('data-test-id="Menu"');
+  var button_menu = await $('[data-test-id="Menu"]');
   await button_menu.click();
 
-  var button_logout = await $('data-test-id="logout"');
+  var button_logout = await $('[data-test-id="logout"]');
   await button_logout.click();
 
-  var button_logout_yes = await $('data-test-id="confirm"');
+  var button_logout_yes = await $('[data-test-id="confirm"]');
   await button_logout_yes.click();
   
+  await driver.switchContext('NATIVE_APP');
+
   await expect(passwordSelector).toExist();
-
-  /*
-  var ga = await $('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.Button');
-  await ga.click();
-
-  var lo = await $('//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[5]');
-  await lo.click();
-
-
-  var gi = await $('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[8]/android.view.View/android.view.View');
-  await gi.click();
-
-  var ga = await $('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.Button');
-  await ga.click();
-  
-  await expect(passwordSelector).toExist();
-
-
-
-  var lo = await $('//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[5]');
-  await lo.click();
-
-  var gi = await $('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[8]/android.view.View/android.view.View');
-  await gi.click();
-
-  var ga = await $('/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.widget.Button');
-  await ga.click();
-  
-  await expect(passwordSelector).toExist();*/
  
 })
 
